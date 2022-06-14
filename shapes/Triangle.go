@@ -6,9 +6,11 @@ type Triangle struct {
 }
 
 func (t Triangle) Area() float64 {
-	return 0
+	return 0.5 * t.Height * t.Base
 }
 
+// this basic understanding of triangles breaks down at this point: Isocolies/right angled/scalene triangles all require
+// special treatment.
 func (t Triangle) Perimeter() float64 {
 	return 0
 }

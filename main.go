@@ -2,8 +2,10 @@ package main
 
 import (
 	"net/http"
+	"os"
 
-	"awesomeProject/greetings"
+	"quiiLearning/countdown"
+	"quiiLearning/greetings"
 )
 
 func MyGreeterHandler(w http.ResponseWriter, r *http.Request) {
@@ -15,4 +17,5 @@ func ServeTheGreaterHandler() {
 }
 
 func main() {
+	countdown.Countdown(os.Stdout, &countdown.RealSleeper{})
 }

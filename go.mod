@@ -1,4 +1,4 @@
-module awesomeProject
+module quiiLearning
 
 go 1.17
 
